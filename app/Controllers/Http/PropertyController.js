@@ -3,6 +3,7 @@
 'use strict'
 
 const Helpers = use('Helpers')
+// const Logger = use('Logger')
 const Property = use('App/Models/Property')
 
 /**

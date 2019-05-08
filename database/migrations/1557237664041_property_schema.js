@@ -10,10 +10,11 @@ class PropertySchema extends Schema {
             table.increments()
             table
                 .integer('user_id')
+                .unsigned()
                 .references('id')
                 .inTable('users')
-                .onUpdate('CASCADE')
-                .onDelete('CASCADE')
+                .onDelete('cascade')
+                .onUpdate('cascade')
             table.string('title').notNullable()
             table.string('address').notNullable()
             table.decimal('price').notNullable()
